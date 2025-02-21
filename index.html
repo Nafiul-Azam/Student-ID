@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>studentid.com</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Student ID Generator</h1>
+    <form id="student-id-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required />
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option value="male" class="male">Male</option>
+        <option value="female" class="female">Female</option>
+      </select>
+      <button type="submit">Generate Student ID</button>
+    </form>
+    <div id="student-id-container"></div>
+    <p class="footer">Made by - <span>Nafiul Azam</span></p>
+    <script src="new.js"></script>
+  </body>
+</html>

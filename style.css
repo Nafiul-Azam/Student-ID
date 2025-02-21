@@ -1,0 +1,115 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+  text-align: left;
+  display: block;
+}
+
+input,
+select,
+button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+input,
+select {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+select {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Gender Option Colors */
+select option {
+  color: black;
+}
+select option.male {
+  background-color: lightblue;
+}
+select option.female {
+  background-color: pink;
+}
+
+button {
+  background: #ff7eb3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4d94;
+}
+
+/* Student ID Display */
+#student-id-container {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: yellow;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.footer span {
+  font-weight: bold;
+  color: yellow;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  form {
+    width: 90%;
+  }
+}
